@@ -9,7 +9,7 @@ const ProductAll = () => {
   const getProducts = async () => {
     let searchQuery = query.get('q') || '';
     console.log('쿼리 값은?', searchQuery);
-    let url = `http://localhost:5000/products?q=${searchQuery}`;
+    let url = `http://localhost:5000/Khaneul1/hnm-react-router/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
     setProductList(data);
