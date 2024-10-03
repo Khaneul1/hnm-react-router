@@ -18,7 +18,7 @@ const ProductDetail = () => {
 
   return (
     <Container>
-      <Row>
+      <Row className="product-row">
         <Col className="product-img">
           <img src={product?.img} />
         </Col>

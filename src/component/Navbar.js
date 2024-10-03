@@ -29,8 +29,8 @@ const Navbar = () => {
   return (
     <div>
       <div className="login-button" onClick={goToLogin}>
-        <FontAwesomeIcon icon={faUser} />
-        <div>로그인</div>
+        <FontAwesomeIcon icon={faUser} className="login-icon" />
+        <div className="login-text">Login</div>
       </div>
       <div className="nav-section">
         <img
@@ -45,9 +45,14 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div>
-          <FontAwesomeIcon icon={faSearch} />
-          <input type="text" onkeyPress={(event) => search(event)} />
+        <div className="search-box">
+          <FontAwesomeIcon icon={faSearch} className="search-icon" />
+          <input
+            type="text"
+            onkeyPress={(event) => search(event)}
+            className="input-box"
+            placeholder="Search"
+          />
         </div>
       </div>
     </div>
