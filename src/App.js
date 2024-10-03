@@ -35,7 +35,7 @@ function App() {
         />
         <Route
           path="/product/:id"
-          element={<PrivateRoute authenticate={authenticate} />}
+          element={<ProductDetail authenticate={authenticate} />}
         />
       </Routes>
     </div>
